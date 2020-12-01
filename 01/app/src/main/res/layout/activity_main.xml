@@ -1,147 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1B1C20"
+    android:background="#F8F5F5"
+    android:filterTouchesWhenObscured="false"
+    android:fitsSystemWindows="false"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="160dp"
-        android:layout_height="66dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/ch_p_nh"
-        android:textColor="#FFFFFF"
-        android:textIsSelectable="false"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="376dp"
-        android:layout_height="73dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/select_a_spot_far_from_your_bed_you_will_snap_to_dismiss_your_alarm"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorLink="#F3ECEC"
+        android:id="@+id/alarmstatus"
+        android:layout_width="301dp"
+        android:layout_height="39dp"
+        android:text="@string/no_up_coming_alarms"
+        android:textColor="#050505"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159" />
+        app:layout_constraintVertical_bias="0.076" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/comment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal|center_vertical"
-        android:text="@string/the_kitchen_or_bathroom_works_great"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:text="@string/next_alarm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintVertical_bias="0.022" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="379dp"
-        android:layout_height="58dp"
-        android:background="#D30B29"
-        android:text="@string/save"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <CheckBox
+        android:id="@+id/checktime1"
+        android:layout_width="340dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@drawable/ic_baseline_more_vert_24"
+        android:freezesText="false"
+        android:gravity="top"
+        android:text="@string/_9_00_am"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintTop_toBottomOf="@+id/checktime3" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="190dp"
-        android:layout_height="190dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <CheckBox
+        android:id="@+id/checktime2"
+        android:layout_width="340dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@drawable/ic_baseline_more_vert_24"
+        android:drawableBottom="@drawable/abc_ab_share_pack_mtrl_alpha_9"
+        android:fallbackLineSpacing="false"
+        android:gravity="top"
+        android:text="@string/_11_44_pm"
+        app:layout_constraintBottom_toTopOf="@+id/tabmain"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414"
-        app:srcCompat="@drawable/maytinh"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/checktime1"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="190dp"
-        android:layout_height="190dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <CheckBox
+        android:id="@+id/checktime3"
+        android:layout_width="340dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="120dp"
+        android:drawableEnd="@drawable/ic_baseline_more_vert_24"
+        android:gravity="top"
+        android:text="@string/_7_30_am"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414"
-        app:srcCompat="@drawable/mockhoa"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="379dp"
-        android:layout_height="76dp"
-        android:background="#050505"
-        android:text="@string/add_to_photo"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textIsSelectable="false"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.636" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="58dp"
-        android:layout_height="47dp"
-        android:clickable="false"
-        android:focusable="auto"
-        app:backgroundTint="#1B1C20"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.016"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004"
-        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
-        android:layout_width="52dp"
-        android:layout_height="53dp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/plusmain"
+        android:layout_width="63dp"
+        android:layout_height="61dp"
+        android:background="#1C23BD"
         android:clickable="true"
-        app:backgroundTint="#1B1C20"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:focusable="true"
+        app:backgroundTint="#676DF6"
+        app:layout_constraintBottom_toBottomOf="@+id/tabmain"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.921"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004"
-        app:srcCompat="@drawable/ic_baseline_remove_red_eye_24" />
+        app:layout_constraintVertical_bias="0.86"
+        app:srcCompat="@drawable/fab_add" />
 
-</android.support.constraint.ConstraintLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabmain"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#F40000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabTextColor="#FBFBFB">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabalarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/round_alarm_dark"
+            android:text="@string/alarm" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabhistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_timeline_white_24dp"
+            android:text="@string/history" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabpanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_art_track_white_24dp"
+            android:text="@string/today_s_panel" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabsetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:text="@string/settings" />
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

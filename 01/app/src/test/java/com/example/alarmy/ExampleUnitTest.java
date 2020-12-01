@@ -1,4 +1,4 @@
-package com.example.alarmclockalarmy;
+package com.example.alarmy;
 
 import org.junit.Test;
 
