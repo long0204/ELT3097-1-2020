@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btsound"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:outlineSpotShadowColor="#0B0A0A"
@@ -296,21 +297,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/Wake Up Check"
-        android:layout_width="356dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="8dp"
-        android:background="#FFFFFF"
-        android:drawableStart="@drawable/ic_baseline_alarm_on_24"
-        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
-        android:gravity="start"
-        android:text="@string/wake_up_check"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Sound Power Pack" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
         android:layout_width="51dp"
@@ -362,15 +348,15 @@
         android:gravity="start"
         android:text="@string/ringtone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar3" />
 
     <Button
-        android:id="@+id/Sound Power Pack"
+        android:id="@+id/btsound"
         android:layout_width="356dp"
         android:layout_height="51dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:background="#FFFFFF"
         android:drawableStart="@drawable/ic_baseline_speaker_24"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
@@ -382,10 +368,40 @@
         app:layout_constraintTop_toBottomOf="@+id/Ringtone" />
 
     <Button
+        android:id="@+id/Label"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_round_local_offer_24"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:gravity="start"
+        android:text="@string/label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Snooze" />
+
+    <Button
+        android:id="@+id/btwake"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="456dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_baseline_alarm_on_24"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:gravity="start"
+        android:text="@string/wake_up_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/Snooze"
         android:layout_width="356dp"
         android:layout_height="51dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="512dp"
         android:background="#FFFFFF"
         android:drawableStart="@drawable/icon_alarm_snooze"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
@@ -394,22 +410,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Wake Up Check" />
-
-    <Button
-        android:id="@+id/Label"
-        android:layout_width="356dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="4dp"
-        android:background="#FFFFFF"
-        android:drawableStart="@drawable/ic_round_local_offer_24"
-        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
-        android:gravity="start"
-        android:text="@string/label"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Snooze" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Delete"
@@ -421,10 +422,10 @@
         android:text="@string/delete"
         app:layout_constraintBottom_toTopOf="@+id/Save"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.981" />
+        app:layout_constraintVertical_bias="0.987" />
 
     <Button
         android:id="@+id/Save"
