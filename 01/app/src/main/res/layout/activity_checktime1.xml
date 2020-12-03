@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:outlineSpotShadowColor="#0B0A0A"
     android:splitMotionEvents="true"
-    tools:context=".checktime1">
+    tools:context=".checktime1"
+    tools:targetApi="p">
 
     <TextView
         android:id="@+id/textView15"
@@ -28,9 +29,23 @@
         android:layout_height="49dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
+        android:background="@drawable/bg"
         android:text="@string/s"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/Monday"
+        android:layout_width="42dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/bg"
+        android:text="@string/m"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Sunday"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.142" />
 
@@ -40,6 +55,7 @@
         android:layout_height="49dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
+        android:background="@drawable/bg"
         android:text="@string/t"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Monday"
@@ -52,6 +68,7 @@
         android:layout_height="49dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
+        android:background="@drawable/bg"
         android:text="@string/w"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Tuesday"
@@ -64,6 +81,7 @@
         android:layout_height="49dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
+        android:background="@drawable/bg"
         android:text="@string/_th"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Wednesday"
@@ -76,6 +94,7 @@
         android:layout_height="49dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:background="@drawable/bg"
         android:text="@string/f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Thursday"
@@ -86,54 +105,14 @@
         android:id="@+id/Saturday"
         android:layout_width="42dp"
         android:layout_height="49dp"
-        android:text="@string/_sa"
+        android:background="@drawable/bg"
+        android:text="@string/sa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.27"
         app:layout_constraintStart_toEndOf="@+id/Friday"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.142" />
-
-    <Button
-        android:id="@+id/Monday"
-        android:layout_width="42dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:text="@string/m"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Sunday"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="43dp"
-        android:layout_height="33dp"
-        android:layout_marginBottom="32dp"
-        android:background="#FFFFFF"
-        android:contentDescription="@string/btback"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_left_24" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:background="#FFFFFF"
-        android:contentDescription="@string/bteye"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_baseline_remove_red_eye_24" />
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -159,6 +138,7 @@
                 android:layout_height="42dp"
                 android:gravity="center|center_vertical"
                 android:text="@string/_1"
+                android:textColor="#070707"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -168,6 +148,7 @@
                 android:layout_height="39dp"
                 android:gravity="center|center_vertical"
                 android:text="@string/_2"
+                android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -177,6 +158,7 @@
                 android:layout_height="40dp"
                 android:gravity="center|center_vertical"
                 android:text="@string/_3"
+                android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -186,6 +168,7 @@
                 android:layout_height="40dp"
                 android:gravity="center"
                 android:text="@string/_4"
+                android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -214,6 +197,7 @@
                 android:layout_height="44dp"
                 android:gravity="center|center_vertical"
                 android:text="@string/m_1"
+                android:textColor="#050505"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -223,6 +207,7 @@
                 android:layout_height="40dp"
                 android:gravity="center|center_vertical"
                 android:text="@string/m_2"
+                android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -232,6 +217,7 @@
                 android:layout_height="39dp"
                 android:gravity="center|center_vertical"
                 android:text="@string/m_3"
+                android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -241,6 +227,7 @@
                 android:layout_height="41dp"
                 android:gravity="center|center_vertical"
                 android:text="@string/m_4"
+                android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -268,6 +255,7 @@
                 android:layout_height="47dp"
                 android:gravity="center|center_vertical"
                 android:text="@string/am"
+                android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -277,6 +265,7 @@
                 android:layout_height="36dp"
                 android:gravity="center|center_vertical"
                 android:text="@string/pm"
+                android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -284,53 +273,33 @@
 
     <Button
         android:id="@+id/Mission"
-        android:layout_width="356dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="216dp"
+        android:layout_width="352dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="208dp"
         android:background="#FFFFFF"
         android:drawableStart="@android:drawable/ic_menu_always_landscape_portrait"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:gravity="start"
         android:text="@string/mission"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
-        android:layout_width="51dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:forceDarkAllowed="false"
-        android:layerType="none"
-        android:outlineAmbientShadowColor="#FDFCFC"
-        android:soundEffectsEnabled="true"
-        android:tint="#000000"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/Ringtone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Mission"
-        app:layout_constraintVertical_bias="0.2"
-        app:srcCompat="@drawable/ic_baseline_volume_up_24" />
-
     <SeekBar
         android:id="@+id/seekBar3"
-        android:layout_width="223dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_width="203dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
         android:layout_marginTop="4dp"
-        app:layout_constraintStart_toEndOf="@+id/floatingActionButton2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Mission" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
-        android:layout_height="51dp"
+        android:layout_height="37dp"
         android:drawableStart="@drawable/ic_baseline_vibration_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.129"
@@ -339,76 +308,61 @@
 
     <Button
         android:id="@+id/Ringtone"
-        android:layout_width="356dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="352dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
         android:background="#FFFFFF"
         android:drawableStart="@drawable/ic_baseline_music_note_24"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:gravity="start"
         android:text="@string/ringtone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar3" />
 
     <Button
-        android:id="@+id/btsound"
-        android:layout_width="356dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="8dp"
-        android:background="#FFFFFF"
-        android:drawableStart="@drawable/ic_baseline_speaker_24"
-        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
-        android:gravity="start"
-        android:text="@string/sound_power_pack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ringtone" />
-
-    <Button
         android:id="@+id/Label"
-        android:layout_width="356dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="352dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
         android:background="#FFFFFF"
         android:drawableStart="@drawable/ic_round_local_offer_24"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:gravity="start"
         android:text="@string/label"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Snooze" />
 
     <Button
         android:id="@+id/btwake"
         android:layout_width="356dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="456dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="400dp"
         android:background="#FFFFFF"
         android:drawableStart="@drawable/ic_baseline_alarm_on_24"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:gravity="start"
         android:text="@string/wake_up_check"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/Snooze"
-        android:layout_width="356dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="512dp"
+        android:layout_width="352dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="456dp"
         android:background="#FFFFFF"
         android:drawableStart="@drawable/icon_alarm_snooze"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:gravity="start"
         android:text="@string/snooze"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -440,5 +394,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btback"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="58dp"
+        android:layout_height="46dp"
+        android:background="#FFFFFF"
+        android:gravity="start|top"
+        android:linksClickable="false"
+        android:rotationX="8"
+        android:text="@string/btnback"
+        android:textColor="#736F6F"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnsoundpower"
+        android:layout_width="352dp"
+        android:layout_height="37dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_baseline_speaker_24"
+        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:gravity="start"
+        android:text="@string/sound_power_pack"
+        app:layout_constraintBottom_toTopOf="@+id/btwake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ringtone"
+        app:layout_constraintVertical_bias="0.483" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

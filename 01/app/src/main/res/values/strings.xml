@@ -12,7 +12,6 @@
     <string name="btback">TODO</string>
     <string name="bteye">TODO</string>
     <string name="_3">3</string>>
-    <string name="btwatch">TODO</string>
     <string name="_2">2</string>
     <string name="_1">1</string>
     <string name="_4">4</string>
@@ -28,7 +27,6 @@
     <string name="delete">Delete</string>
     <string name="save">Save</string>
     <string name="ringtone">Ringtone</string>
-    <string name="sound_power_pack">Sound Power Pack</string>
     <string name="wake_up_check">Wake Up Check</string>
     <string name="snooze">Snooze</string>
     <string name="label">Label</string>
@@ -39,4 +37,15 @@
     <string name="m_3">3</string>
     <string name="_th">T</string>
     <string name="_sa">Saturday</string>
+    <string name="back">back</string>
+    <string name="todo">TODO</string>
+    <string name="sa">SA</string>
+    <string name="btnback"><![CDATA[<]]></string>
+    <string name="sound_power_pack">Sound Power Pack</string>
+    <string name="quick_alarm">Quick alarm</string>
+    <string name="x">X</string>
+    <string name="plus">+</string>
+    <string name="string_plus">pluss</string>
+    <string name="pluss">plus</string>
+    <string name="cong">+</string>
 </resources>

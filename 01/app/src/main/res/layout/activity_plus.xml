@@ -36,6 +36,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
+    <Button
+        android:id="@+id/btchecktime1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="236dp"
+        android:layout_height="82dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/checktime3"
+        app:layout_constraintEnd_toEndOf="@+id/checktime3"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="@+id/checktime3"
+        app:layout_constraintTop_toTopOf="@+id/checktime3"
+        app:layout_constraintVertical_bias="0.0" />
+
     <CheckBox
         android:id="@+id/checktime1"
         android:layout_width="340dp"
@@ -49,19 +62,6 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checktime3" />
-
-    <Button
-        android:id="@+id/btchecktime1"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="236dp"
-        android:layout_height="82dp"
-        android:background="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/checktime3"
-        app:layout_constraintEnd_toEndOf="@+id/checktime3"
-        app:layout_constraintHorizontal_bias="0.846"
-        app:layout_constraintStart_toStartOf="@+id/checktime3"
-        app:layout_constraintTop_toTopOf="@+id/checktime3"
-        app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/checktime2"
@@ -158,8 +158,9 @@
             android:icon="@drawable/ic_settings_white_24dp"
             android:text="@string/settings" />
     </com.google.android.material.tabs.TabLayout>
+
     <Button
-        android:id="@+id/btplu"
+        android:id="@+id/btplus"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/hinhtron"
@@ -173,5 +174,67 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.833" />
+
+    <Button
+        android:id="@+id/btplusalarm"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/hinhtron"
+        android:drawableTop="@drawable/ic_alarm_white_24dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <Button
+        android:id="@+id/btplusquickalarm"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/hinhtron"
+        android:drawableTop="@drawable/ic_quick_lightning_24dp"
+        android:drawingCacheQuality="low"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="92dp"
+        android:layout_height="29dp"
+        android:background="#090808"
+        android:gravity="center"
+        android:text="@string/quick_alarm"
+        android:textColor="#FFFCFC"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="64dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="200dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="@string/alarm"
+        android:textColor="#EAEAEA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
