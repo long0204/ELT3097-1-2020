@@ -10,10 +10,112 @@
     tools:context=".checktime1"
     tools:targetApi="p">
 
+    <Button
+        android:id="@+id/btback"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="42dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
+        android:background="#41B9E8"
+        android:gravity="start|top"
+        android:linksClickable="false"
+        android:rotationX="8"
+        android:text="@string/btnback"
+        android:textColor="#090909"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Sunday"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/bg"
+        android:text="@string/s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Tuesday"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/bg"
+        android:text="@string/t"
+        app:layout_constraintStart_toEndOf="@+id/Monday"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Wednesday"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/bg"
+        android:text="@string/w"
+        app:layout_constraintStart_toEndOf="@+id/Tuesday"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Thursday"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/bg"
+        android:text="@string/_th"
+        app:layout_constraintStart_toEndOf="@+id/Wednesday"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Friday"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/bg"
+        android:text="@string/f"
+        app:layout_constraintStart_toEndOf="@+id/Thursday"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Saturday"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/bg"
+        android:text="@string/sa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toEndOf="@+id/Friday"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Monday"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="344dp"
+        android:background="@drawable/bg"
+        android:text="@string/m"
+        app:layout_constraintStart_toEndOf="@+id/Sunday"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/hienthi"
         android:layout_width="354dp"
-        android:layout_height="30dp"
+        android:layout_height="28dp"
         android:background="#DFD5D5"
         android:gravity="center|center_vertical"
         android:text="@string/ring_in_7_hours_and_52_minutes"
@@ -21,290 +123,56 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
-
-    <Button
-        android:id="@+id/Sunday"
-        android:layout_width="42dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/bg"
-        android:text="@string/s"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <Button
-        android:id="@+id/Monday"
-        android:layout_width="42dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:background="@drawable/bg"
-        android:text="@string/m"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Sunday"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <Button
-        android:id="@+id/Tuesday"
-        android:layout_width="42dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:background="@drawable/bg"
-        android:text="@string/t"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Monday"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <Button
-        android:id="@+id/Wednesday"
-        android:layout_width="42dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:background="@drawable/bg"
-        android:text="@string/w"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Tuesday"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <Button
-        android:id="@+id/Thursday"
-        android:layout_width="42dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:background="@drawable/bg"
-        android:text="@string/_th"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Wednesday"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <Button
-        android:id="@+id/Friday"
-        android:layout_width="42dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:background="@drawable/bg"
-        android:text="@string/f"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Thursday"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <Button
-        android:id="@+id/Saturday"
-        android:layout_width="42dp"
-        android:layout_height="49dp"
-        android:background="@drawable/bg"
-        android:text="@string/sa"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
-        app:layout_constraintStart_toEndOf="@+id/Friday"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
-    <ScrollView
-        android:id="@+id/scrollView3"
-        android:layout_width="74dp"
-        android:layout_height="41dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/hour1"
-                android:layout_width="match_parent"
-                android:layout_height="42dp"
-                android:gravity="center|center_vertical"
-                android:text="@string/_1"
-                android:textColor="#070707"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/hour2"
-                android:layout_width="match_parent"
-                android:layout_height="39dp"
-                android:gravity="center|center_vertical"
-                android:text="@string/_2"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/hour3"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:gravity="center|center_vertical"
-                android:text="@string/_3"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/hour4"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:text="@string/_4"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="82dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginRight="136dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/minitune1"
-                android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:gravity="center|center_vertical"
-                android:text="@string/m_1"
-                android:textColor="#050505"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/minitune2"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:gravity="center|center_vertical"
-                android:text="@string/m_2"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/minitune3"
-                android:layout_width="match_parent"
-                android:layout_height="39dp"
-                android:gravity="center|center_vertical"
-                android:text="@string/m_3"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/minitune4"
-                android:layout_width="match_parent"
-                android:layout_height="41dp"
-                android:gravity="center|center_vertical"
-                android:text="@string/m_4"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <ScrollView
-        android:layout_width="53dp"
-        android:layout_height="46dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.219"
-        app:layout_constraintStart_toEndOf="@+id/scrollView2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/btAM"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:gravity="center|center_vertical"
-                android:text="@string/am"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/btPM"
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:gravity="center|center_vertical"
-                android:text="@string/pm"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </ScrollView>
+        app:layout_constraintVertical_bias="0.559" />
 
     <Button
         android:id="@+id/Mission"
         android:layout_width="352dp"
         android:layout_height="37dp"
-        android:layout_marginTop="208dp"
         android:background="#FFFFFF"
         android:drawableStart="@android:drawable/ic_menu_always_landscape_portrait"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:gravity="start"
         android:text="@string/mission"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/hienthi"
+        app:layout_constraintVertical_bias="0.062" />
 
     <SeekBar
         android:id="@+id/seekBar3"
         android:layout_width="203dp"
         android:layout_height="34dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginLeft="84dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Mission" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
-        android:layout_height="37dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
         android:drawableStart="@drawable/ic_baseline_vibration_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/seekBar3"
-        app:layout_constraintTop_toTopOf="@+id/seekBar3" />
+        app:layout_constraintTop_toBottomOf="@+id/Mission" />
+
+    <Button
+        android:id="@+id/iconvolum"
+        android:layout_width="63dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_volume_mute_black_36dp"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar3"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mission" />
 
     <Button
         android:id="@+id/Ringtone"
@@ -317,69 +185,40 @@
         android:gravity="start"
         android:text="@string/ringtone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar3" />
 
     <Button
-        android:id="@+id/Label"
+        android:id="@+id/btnsoundpower"
         android:layout_width="352dp"
         android:layout_height="37dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:background="#FFFFFF"
-        android:drawableStart="@drawable/ic_round_local_offer_24"
+        android:drawableStart="@drawable/ic_baseline_speaker_24"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:gravity="start"
-        android:text="@string/label"
+        android:text="@string/sound_power_pack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Snooze" />
+        app:layout_constraintTop_toBottomOf="@+id/Ringtone" />
 
     <Button
         android:id="@+id/btwake"
         android:layout_width="356dp"
         android:layout_height="37dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginBottom="48dp"
         android:background="#FFFFFF"
         android:drawableStart="@drawable/ic_baseline_alarm_on_24"
         android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
         android:gravity="start"
         android:text="@string/wake_up_check"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Snooze"
-        android:layout_width="352dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="456dp"
-        android:background="#FFFFFF"
-        android:drawableStart="@drawable/icon_alarm_snooze"
-        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
-        android:gravity="start"
-        android:text="@string/snooze"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/Delete"
-        android:layout_width="356dp"
-        android:layout_height="51dp"
-        android:background="#E6E4E4"
-        android:outlineAmbientShadowColor="#040303"
-        android:outlineSpotShadowColor="#070707"
-        android:text="@string/delete"
-        app:layout_constraintBottom_toTopOf="@+id/Save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.987" />
+        app:layout_constraintTop_toBottomOf="@+id/btnsoundpower" />
 
     <Button
         android:id="@+id/Save"
@@ -390,44 +229,21 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btback"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="58dp"
-        android:layout_height="46dp"
-        android:background="#FFFFFF"
-        android:gravity="start|top"
-        android:linksClickable="false"
-        android:rotationX="8"
-        android:text="@string/btnback"
-        android:textColor="#736F6F"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TimePicker
+        android:id="@+id/timePicker2"
+        android:layout_width="374dp"
+        android:layout_height="321dp"
+        android:layout_marginTop="4dp"
+        android:headerBackground="@drawable/abc_list_longpressed_holo_9"
+        android:scrollbarDefaultDelayBeforeFade="300"
+        android:scrollbarFadeDuration="200"
+        android:scrollbarSize="1dp"
+        android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btnsoundpower"
-        android:layout_width="352dp"
-        android:layout_height="37dp"
-        android:background="#FFFFFF"
-        android:drawableStart="@drawable/ic_baseline_speaker_24"
-        android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
-        android:gravity="start"
-        android:text="@string/sound_power_pack"
-        app:layout_constraintBottom_toTopOf="@+id/btwake"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Ringtone"
-        app:layout_constraintVertical_bias="0.483" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

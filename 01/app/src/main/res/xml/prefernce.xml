@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Button
+        android:id="@+id/alarmmm3"
+        android:layout_width="100dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="4dp"
+        android:background="#F60B0B"
+        android:drawableBottom="@drawable/ic_alarm_white_24dp"
+        android:text="@string/alarm"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/setting2"
+        android:layout_width="100dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="4dp"
+        android:background="#F60B0B"
+        android:drawableBottom="@drawable/ic_settings_white_24dp"
+        android:text="@string/setting"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Todaypanel" />
+    <Button
+        android:id="@+id/todaypanel2"
+        android:layout_width="101dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginLeft="208dp"
+        android:layout_marginBottom="4dp"
+        android:background="#F60B0B"
+        android:drawableBottom="@drawable/ic_art_track_white_24dp"
+        android:text="@string/todaypanel"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/history2"
+        android:layout_width="106dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="4dp"
+        android:background="#F60B0B"
+        android:drawableBottom="@drawable/ic_timeline_white_24dp"
+        android:text="@string/history"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <PreferenceCategory
+        android:drawableLeft="@drawable/round_alarm"
+        android:key="generalSetting"
+        android:summary="Prevent phone turn-off,Max snoozes"
+        android:title="Alarm">
+        <Preference
+            android:key="default_alarm_setting"
+            android:summary="Applied when setting a new alarm"
+            android:title="Default alarm setting" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="new_power_off_setting"
+            android:summary="Prevent power off when ringing"
+            android:title="Prevent phone turn-off" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="uninstall_prevent_setting"
+            android:title="Prevent app uninstall" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_sort_order_cb"
+            android:title="Display next alarm" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Mission"
+        android:key="advancedSetting">
+
+        <Preference
+            android:title="Volume and Sound"
+            android:key="vol_and_sound"
+            android:summary="Gradually increase volume, Use the built-in speaker"/>
+
+        <Preference
+            android:title="General"
+            android:key="general_settings"
+            android:summary="Theme, Language"/>
+
+        <Preference
+            android:title="Premiums Settings"
+            android:key="premium_settings"
+            android:summary="Exit confirmation, Today’s panel, Disable last-minute…"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
