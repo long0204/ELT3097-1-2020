@@ -11,24 +11,6 @@
     tools:targetApi="p">
 
     <Button
-        android:id="@+id/btback"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="42dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="4dp"
-        android:background="#41B9E8"
-        android:gravity="start|top"
-        android:linksClickable="false"
-        android:rotationX="8"
-        android:text="@string/btnback"
-        android:textColor="#090909"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/Sunday"
         android:layout_width="42dp"
         android:layout_height="40dp"
@@ -233,8 +215,8 @@
 
     <TimePicker
         android:id="@+id/timePicker2"
-        android:layout_width="374dp"
-        android:layout_height="321dp"
+        android:layout_width="412dp"
+        android:layout_height="329dp"
         android:layout_marginTop="4dp"
         android:headerBackground="@drawable/abc_list_longpressed_holo_9"
         android:scrollbarDefaultDelayBeforeFade="300"
@@ -242,7 +224,25 @@
         android:scrollbarSize="1dp"
         android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btback"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:background="#2D2F31"
+        android:drawableStart="@drawable/ic_baseline_keyboard_arrow_left_24"
+        android:gravity="start|top"
+        android:linksClickable="false"
+        android:rotationX="8"
+        android:textColor="#090909"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

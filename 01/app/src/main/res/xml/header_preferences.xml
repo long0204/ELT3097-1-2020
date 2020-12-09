@@ -1,15 +1,95 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <PreferenceCategory
+        android:drawableLeft="@drawable/round_alarm"
+        android:key="generalSetting"
+        android:summary="Prevent phone turn-off,Max snoozes"
+        android:title="Alarm">
+        <Preference
+            android:key="default_alarm_setting"
+            android:summary="Applied when setting a new alarm"
+            android:title="Default alarm setting" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="new_power_off_setting"
+            android:summary="Prevent power off when ringing"
+            android:title="Prevent phone turn-off" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="uninstall_prevent_setting"
+            android:title="Prevent app uninstall" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="alarm_sort_order_cb"
+            android:title="Display next alarm" />
+    </PreferenceCategory>
     <Preference
-        app:fragment="com.example.alarmy.Settingg$MessagesFragment"
-        app:icon="@drawable/messages"
-        app:key="messages_header"
-        app:title="@string/messages_header" />
+        android:id="@+id/preference5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:key="default_alarm_setting"
+        android:summary="Applied when setting a new alarm"
+        android:title="Default alarm setting" />
+    <CheckBoxPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="false"
+        android:key="check_box_preference_1"
+        android:summary="Prevent power off when ringing"
+        android:title="Prevent phone turn-off" />
+    <CheckBoxPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="false"
+        android:key="check_box_preference_1"
+        android:title="Prevent app uninstall" />
+    <CheckBoxPreference
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        android:key="check_box_preference_1"
+        android:title="Display next alarm" />
+    <PreferenceCategory
+        android:key="advancedSetting"
+        android:title="Mission">
 
+        <Preference
+            android:key="vol_and_sound"
+            android:summary="Gradually increase volume, Use the built-in speaker"
+            android:title="Volume and Sound" />
+
+        <Preference
+            android:key="general_settings"
+            android:summary="Theme, Language"
+            android:title="General" />
+
+        <Preference
+            android:key="premium_settings"
+            android:summary="Exit confirmation, Today’s panel, Disable last-minute…"
+            android:title="Premiums Settings" />
+
+    </PreferenceCategory>
     <Preference
-        app:fragment="com.example.alarmy.Settingg$SyncFragment"
-        app:icon="@drawable/sync"
-        app:key="sync_header"
-        app:title="@string/sync_header" />
+        android:id="@+id/preference6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:key="vol_and_sound"
+        android:summary="Gradually increase volume, Use the built-in speaker"
+        android:title="Volume and Sound" />
+    <Preference
+        android:id="@+id/preference7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:key="general_settings"
+        android:summary="Theme, Language"
+        android:title="General" />
+    <Preference
+        android:id="@+id/preference8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:key="premium_settings"
+        android:summary="Exit confirmation, Today’s panel, Disable last-minute…"
+        android:title="Premiums Settings" />
 
 </PreferenceScreen>
