@@ -18,7 +18,7 @@ public class Music extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        mediaPlayer = MediaPlayer.create(this,R.raw.nhacchuong);
+        mediaPlayer = MediaPlayer.create(this,R.raw.thoiken);
         mediaPlayer.start();
         Log.e("Trong music","chao");
         return START_NOT_STICKY;

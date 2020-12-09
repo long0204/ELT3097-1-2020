@@ -234,7 +234,7 @@
         android:layout_width="60dp"
         android:layout_height="100dp"
         android:layout_marginTop="4dp"
-        android:background="#2D2F31"
+        android:background="#03A8BD"
         android:drawableStart="@drawable/ic_baseline_keyboard_arrow_left_24"
         android:gravity="start|top"
         android:linksClickable="false"
